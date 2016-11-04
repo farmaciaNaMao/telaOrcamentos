@@ -1,0 +1,34 @@
+@media screen and (min-width: 480px) {
+
+
+// Barra Principal do Sistema 
+.barra-principal {
+	@include espacamentoSimples(2%);
+}
+
+.fnm-Hamburguer {
+	margin-right: 0%;
+}
+
+
+// Menu dos Pedidos 
+.btn-menu button {
+    @include espacamento(1%, 0);
+}
+
+.titulo-lista-menu { 
+	padding: 1.5%;
+}
+
+.itens-lista { 
+ ul li span {
+    @include spacing(2% , 3.8% , 2% , 4%);
+  }
+
+}
+
+
+
+
+
+}

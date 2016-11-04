@@ -1,0 +1,43 @@
+// variaveis
+@import 'variaveis/variaveis';
+
+// Mixins
+@import 'mixins/mixin-geral';
+@import 'mixins/bgColor';
+@import 'mixins/color';
+@import 'mixins/tamanho';
+@import 'mixins/alinhar';
+@import 'mixins/espacamento';
+
+
+//Placeholders
+
+// Resent 
+@import 'layoult/reset';
+
+//Layoult
+@import 'layoult/barra_principal';
+@import 'layoult/menu_pedidos';
+@import 'layoult/container_principal';
+
+
+
+
+
+// Medias Queries Dispositivos
+@import 'media/dispositivos/dispositivos-360';
+@import 'media/dispositivos/dispositivos-480';
+@import 'media/dispositivos/dispositivos-768';
+@import 'media/dispositivos/dispositivos-800';
+@import 'media/dispositivos/dispositivos-980';
+@import 'media/dispositivos/dispositivos-1024';
+
+//Medua Queries WideScreen
+@import 'media/wide/dispositivos-1280.scss';
+@import 'media/wide/dispositivos-1366.scss';
+@import 'media/wide/dispositivos-1720.scss';
+@import 'media/wide/dispositivos-1920.scss';
+@import 'media/wide/dispositivos-1980.scss';
+
+// Medias Queries Telas
+@import 'media/4K/tela-3656';

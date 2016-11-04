@@ -1,0 +1,36 @@
+@media screen and (min-width: 3656px) {
+
+.barra-principal {
+  @include espacamentoSimples(0.4%);
+}
+
+.fnm-Hamburguer {
+  @include tamanhoSimples(0.6%, left);
+  margin-right: 0;
+}
+
+// Menu dos Pedidos 
+.itens-lista {
+  border: none;
+	ul li span{
+		@include spacing(2% , 5% , 2.5% , 5%);
+		margin-left: 20%;		
+	}
+
+ul li:nth-child(1), ul li:nth-child(2), ul li:nth-child(3),	ul li:nth-child(4), ul li:nth-child(5),	ul li:nth-child(6), ul li:nth-child(7) {
+	padding: 0.3%; 
+}
+
+ul li:nth-child(8) {
+	padding: 0;
+	button {
+		margin-left: 20%;
+		border: none;
+		@include bgColor($corPadrao); } }
+}
+
+.titulo-lista-menu { @include  tamanhoPadrao(10%, left, #000, #e5e8e8); padding: 0.24%; }
+
+
+
+}

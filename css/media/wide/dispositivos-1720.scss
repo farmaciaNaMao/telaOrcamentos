@@ -1,0 +1,20 @@
+@media screen and (min-width: 1720px) {
+
+//Barra Principal
+.barra-principal {
+	@include espacamentoSimples(0.8%);
+}
+
+.fnm-Hamburguer {
+	@include tamanhoSimples(1.5%, left);
+	}	
+
+// Menu de Pedidos
+.titulo-lista-menu { 
+	@include  tamanhoPadrao(10%, left, #000, #e5e8e8); 
+	padding: 0.5%;	
+}
+
+
+
+}

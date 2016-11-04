@@ -1,0 +1,46 @@
+@media screen and (min-width: 1280px) {
+
+// Barra Principal
+.fnm-Hamburguer {
+  @include tamanhoSimples(2%, left);
+  @include margem(0,0, 0, 0);
+}
+
+// Menu dos Pedidos
+
+.menu, .lista-menu { @include margem(0,0, 0, 0); @include spacing(0,0,0,0); }
+.menu { @include margem(2%, 0 ,0, 0);}
+.btn-menu { display: none;}
+.menu { @include tamanhoPadrao(100%, left);}
+.lista-menu { @include  tamanhoPadrao(100%, left, #000);}
+.titulo-lista-menu { @include  tamanhoPadrao(10%, left, #000, #e5e8e8); padding: 0.49%;	border-bottom: 2px solid #e5e8e8;}
+
+.itens-lista {
+  border: none;
+  @include  tamanhoPadrao(90%, left, #000);
+	ul li {
+		width: 12%;
+		display: inline-block !important;
+		cursor: pointer;
+		border: none;
+		margin: 0;
+		span { @include spacing(4% , 8% , 4% , 8.5%); @include arrendodar(2px); @include alinhar(center);
+			margin-left: 10%;
+		}
+	}
+
+ul li:nth-child(1), ul li:nth-child(2), ul li:nth-child(3),	ul li:nth-child(4), ul li:nth-child(5),	ul li:nth-child(6), ul li:nth-child(7) {
+	padding: 0.7%; 
+	border-bottom: 2px solid #ccc;
+}
+
+ul li:nth-child(8) {
+	padding: 0;
+	button {
+		margin-left: 10%;
+		border: none;
+		@include bgColor($corPadrao); } }
+}
+
+
+}

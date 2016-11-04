@@ -1,0 +1,34 @@
+@media screen and (min-width: 768px) {
+
+// Barra Principal
+.barra-principal {
+  @include espacamentoSimples(1.5%);
+}
+
+.fnm-Hamburguer {
+  @include tamanhoSimples(2.5%, left);
+    margin-right: 1%;
+  
+  i {
+    font-size: 1.2em;
+  }
+
+}
+.fnm-title h3 { 
+  vertical-align: text-top;
+}
+
+// Menu dos Pedidos
+.itens-lista { 
+  ul li {
+    @include espacamento(3%, 3%); }
+
+	ul li span {
+	    @include spacing(2% , 2.8% , 2% , 3%);
+  }
+
+}
+
+
+
+}

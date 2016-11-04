@@ -1,0 +1,4 @@
+@mixin tamanhoSimples($width, $direcao) {
+	width: $width;
+	float: $direcao;
+}

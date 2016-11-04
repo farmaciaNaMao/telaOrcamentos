@@ -1,0 +1,29 @@
+@media screen and (min-width: 1920px) {
+	
+// Barra Principal 
+.fnm-Hamburguer {
+	@include tamanhoSimples(1.2%, left);
+}
+
+// Menu de Pedidos
+.titulo-lista-menu {
+	 padding: 0.52%; }
+
+
+.itens-lista ul li {
+		width: 12%;
+		span { @include spacing(4% , 8% , 4% , 8.5%); 
+			margin-left: 20%;
+		}
+	}
+.recusados, .concluidos, .cancelados { 
+	margin-left: 20%;
+}
+
+
+
+
+
+
+
+}

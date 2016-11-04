@@ -1,0 +1,248 @@
+.detalhes-pedido {
+  @include  tamanhoPadrao(100%, left, #000);
+}
+
+// Barra de Detalhes do Cliente
+.info-cliente-btn {
+  @include tamanhoPadrao(100%, left, #000);
+  @include bgColor(#f7f8f8);
+  @include sombra(1px 1px 2px #1e1e1e);
+  border-top: 1px solid lighten(#ccc, 5);
+  border-bottom: 2px solid $cor-barra;
+}
+
+.texto-info {
+  @include  espacamento(2%, 0);
+  @include tamanhoPadrao(100%, left, #000);
+}
+
+.icon-info , .title-info{
+  @include alinhar(center);
+}
+
+.icon-info {
+  @include tamanhoPadrao(5%, left, #000);
+  @include margem(0 , 0 , 0, 2%);
+}
+
+.title-info {
+  @include tamanhoPadrao(86%, left, #000);
+} //Fim da Barra de Detalhes
+
+
+/* Pedido Clicado */
+
+.pedido-clicado {
+  @include bgColor(#fff);
+ // @include margem(0, 2%, 0 ,0 );
+  @include espacamento(2%, 3%);
+  @include sombra(0.1px, 0.1px ,0.5px, lighten(#909090, 15));
+  @include tamanhoPadrao(100%, left, #000);
+}
+
+.detal-pedido {
+  @include espacamento(1%, 2%);
+  @include tamanhoPadrao(80%, left, #000);
+}
+
+
+.first-detalhes-info, .second-detalhes-info {
+  @include tamanhoPadrao(50%, left, #000);
+  margin: 0 auto;
+
+}
+
+.detalhe-nome, .detalhe-numero, .detalhe-hora, .detalhe-atend {
+  @include tamanhoPadrao(100%, left, #000);
+  @include indentar(15px);
+}
+
+.detalhe-nome {
+  @include font(1.2em, #000);
+}
+
+.detalhe-numero{
+  @include font(0.8em, #000);
+  margin: 0 auto;
+}
+
+.detalhe-hora {
+  @include margem(0.4em);
+  @include font(0.8em, #000);
+  @include alinhar(right);
+}
+
+.detalhe-atend  {
+  @include margem(0.4em);
+  @include font(0.8em, #000);
+  @include alinhar(right);
+}
+
+// Informacoe Pedido/Cliente
+.localizacao-cliente , .outras-funcoes{
+  @include tamanhoPadrao(100%, left, #000);
+}
+
+/* Botoes : Proposta, Pedido Pronto e Suporte*/
+.outras-funcoes {
+  //@include margem(2%);
+  @include bgColor(#fff);
+  @include espacamento(3%, 0);
+}
+
+.proposta, .solicitar-pedido-pronto, .solicitar-suporte {
+  float: left;
+  @include espacamento(1%, 0);
+  button {
+    color : #fff;
+    width: 100%;
+    float: left;
+    font-weight: 400;
+    border-top: 1px solid $corPadrao;
+    border-bottom: 1px solid $corPadrao;
+    @include color($corPadrao);
+    font-size: 0.9em;
+  }
+
+}
+
+.proposta {
+  margin-left: 5%;
+  width: 25%;
+  button {
+    @include bordasArredontar(2px,2px,0,0);
+    border: none;
+    border-top : 1px solid $corPadrao;
+    border-left: 1px solid $corPadrao;
+    border-bottom: 1px solid $corPadrao;
+  }
+}
+
+.solicitar-pedido-pronto{
+  width: 40%;
+  button {
+    border: none;
+    border-top: 1px solid $corPadrao;
+    border-left: 1px solid $corPadrao;
+    border-bottom: 1px solid $corPadrao;
+  }
+}
+
+.solicitar-suporte {
+  width: 25%;
+  button {
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-right: 1px solid lighten($cor-barra, 20);
+    border-left: 1px solid lighten($cor-barra, 20);
+  }
+}
+/* FIm das Outras Funcoes*/
+
+
+.detalhes-cliente, .registros, .tela-proposta, .tela-peidido-pronto, .tela-suporte, .nome-cliente {
+  @include tamanhoPadrao(100%, left, #000);
+}
+
+.registros {
+  @include borda(2px, 0, 0,0 ,#ccc);
+  @include bgColor(#fff);
+}
+
+.nome-cliente div:nth-child(1), .celphone div:nth-child(1),.phone div:nth-child(1) ,
+.nascimento div:nth-child(1) , .email div:nth-child(1), .cpf div:nth-child(1),
+.rg div:nth-child(1), .endereco div:nth-child(1), .entrega div:nth-child(1), .pagamento div:nth-child(1){
+  font-weight: 900;
+  float: left;
+  @include margem(0,0,2%,2%);
+}
+
+// Texto de Observação
+.observacao {
+
+  @include tamanhoPadrao(100%, left, #000);
+
+  textarea {
+    margin-top: 2%;
+    @include tamanhoPadrao(100%, left, #000);
+    border: 2px solid #dbe1d8;
+
+   // background-color: #dbe1d8;
+  }
+}
+
+/* Telas de Proposta, Pedido Pronto, Suporte */
+
+.tela-peidido-pronto , .tela-suporte {
+  @include bgColor(#fff);
+  @include espacamento(2%, 0);
+}
+
+.tela-peidido-pronto button , .tela-suporte button{
+  @include tamanhoPadrao(95%, left, #000);
+  @include bgColor($corPadrao);
+  @include margem(0,0,0,2.5%);
+  @include color(#fff);
+  @include espacamento(2%, 0);
+  @include bordasArredontar(4px,4px,4px,4px);
+  font-size: 0.9em;
+}
+
+/* Tela de Proposta */
+.nova-proposta, .ferramentas, .separacao-ferramenta {
+  @include tamanhoPadrao(100%, left, #000);
+}
+
+/* Área das Ferramentas/Informacoes Detalhadas do Cliente */
+.ferramentas {
+  position: relative;
+  bottom:0;
+  @include spacing(4%, 0, 4%, 0);
+  @include bgColor(lighten(#C9CED0, 15));
+}
+.separacao-ferramenta {
+  @include tamanhoPadrao(100%,left, #000);
+}
+
+
+//Primeira Ferramenta
+.primeira-ferramenta , .segunda-ferramenta, .terceira-ferramenta, .quarta-ferramenta{
+  @include tamanhoPadrao(20%, left, #000);
+  @include bgColor(#fff);
+  @include arrendodar(10px);
+  @include  margem(0,0,0,3.8%);
+  @include sombra(0.1px, 0.1px, 4px, #f5f5f5);
+}
+
+.icone-first-ferramenta, .icone-second-ferramenta, .icone-tr-ferramenta, .icone-qt-ferramenta {
+  padding: 10% 0;
+  @include tamanhoPadrao(100%, left, #000);
+  @include alinhar(center);
+  i{
+    @include font(1.5em, #000);
+    @include color(lighten(#1e1e1e, 10));
+  }
+}
+
+.desc-first-ferramenta , .desc-second-ferramenta, .desc-tr-ferramenta, .desc-qt-ferramenta {
+  @include font(0.7em, #000);
+  @include alinhar(center);
+  @include color(lighten(#1e1e1e, 10));
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

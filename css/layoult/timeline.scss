@@ -1,0 +1,197 @@
+.timeline, .chat, .telas-ferramenta, .indent-pedido, .indent-pedido, .conversa, .mensagem,
+.novo-orcamento, .campos-valores, .campo-add , .campos-outros, .area-desconto, .area-frete, .area-total{
+  @include tamanhoPadrao(100%, left, #000);
+}
+
+// Identificação do Peiddo
+.indent-pedido {
+  @include bgColor(#fff);
+  @include alinhar(center);
+  @include espacamento(2%, 2%);
+  @include borda(0,0,1px,0, #ccc);
+
+  h3 span {
+    @include fontWeight(bold);
+  }
+}
+
+
+// Conversa
+.conversa {
+  @include bgColor(#B0C4DE);
+}
+
+.balao1 {
+  @include tamanhoPadrao(50%, left, #000);
+  @include bgColor(#fff);
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+.balao2 {
+  @include tamanhoPadrao(50%, right, #000);
+  background-color: #ccc;
+  margin-right: 5%;
+  margin-top: 2%;
+}
+
+.balao1, .balao2 {
+  @include alinhar(center);
+  margin-bottom: 5%;
+  @include spacing(2%,0,2%,0);
+  @include arrendodar(5px);
+}
+
+/* Area da Mensagem */
+.mensagem {
+  @include bgColor(#fff);
+  @include  spacing(3%, 0, 3%, 0);
+}
+
+.mensagem input {
+  @include tamanhoPadrao(80%, left, #000);
+  border: 1px solid #b6b6b6;
+  @include spacing(1.5%, 0, 1.5%, 0);
+  margin-left: 2%;
+  margin-top: 1%;
+  @include arrendodar(15px);
+}
+
+.mensagem button {
+  @include tamanhoPadrao(12%, left, #000);
+  @include bgColor($corPadrao);
+  @include color($branco);
+  @include spacing(3%, 2.5%, 3%, 2%);
+  margin-left: 2%;
+  @include arrendodar(20px);
+  @include alinhar(center);
+}
+
+/* Novo Orcamento */
+
+.campo-add {
+  margin-top: 2%;
+}
+
+.campos-outros {
+  margin-top: 2%;
+}
+
+.novo-orcamento {
+  @include bgColor($branco);
+  @include spacing(2%,2%,2%,2%);
+}
+
+.campo-desc{
+  @include tamanhoPadrao(60%, left, #000);
+  @include arrendodar(20px);
+  border: 1px solid #ccc;
+}
+
+.campo-valor {
+  margin-left: 2%;
+  @include tamanhoPadrao(20%, left, #000);
+  border: 1px solid #ccc;
+  @include arrendodar(20px);
+}
+
+.btn-add , .btn-remove{
+  @include tamanhoPadrao(8.5%, left, #000);
+  border: 1px solid #1E90FF;
+  @include arrendodar(20px);
+  @include color($branco);
+  @include bgColor(#1E90FF);
+  margin-left: 2%;
+  padding: 0.7% 0 0.3% 0;
+}
+
+.btn-remove {
+  @include bgColor($corPadrao);
+  border: none;
+}
+
+
+
+.titulo-area {
+  @include tamanhoPadrao(37%, left, #000);
+  @include alinhar(right);
+  font-size: .8em;
+
+
+}
+
+.area-desconto, .area-frete, .area-total {
+  margin-top: 1%;
+  input {
+  @include tamanhoPadrao(33%, left, #000);
+    border: 1px solid #ccc;
+    @include arrendodar(20px);
+  }
+}
+
+
+.x-dias {
+  margin-top: 3%;
+  @include tamanhoPadrao(38%, left, #000);
+  @include spacing(0,2%,0,2%);
+  @include font(0.8em, #000);
+  border: 1px solid #ccc;
+  padding: 2% 2%;
+  border-radius: 5px;
+  margin-left: 1%;
+  margin-right: 1%;
+
+  p {
+    @include alinhar(left);
+    margin-bottom: 1%;
+  }
+
+  input {
+    @include tamanhoPadrao(40%, left, #000);
+    margin-top: 2%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+
+  span {
+    font-size: 1em;
+    margin-left: 1%;
+  }
+}
+
+.campos-outros {
+  @include tamanhoPadrao(60%, right, #000);
+}
+
+
+//Solicitar Nova Imagem
+
+.solicitar-imagem {
+  @include tamanhoPadrao(100%, left, #000);
+  @include bgColor(#fff);
+  padding: 5% 0;
+}
+
+.solicitar-imagem button {
+  @include tamanhoPadrao(90%, left, #000);
+  @include bgColor($corPadrao);
+  margin-left: 5%;
+  @include espacamento(2%, 2%);
+  @include arrendodar(10px);
+  @include color(#fff);
+}
+
+
+//Motivos Cancelamentos
+.motivos-cancelamentos, form {
+  @include tamanhoPadrao(100%, left, #000);
+}
+
+.primeiro-motivo {
+   @include tamanhoPadrao(100%, left, #000);
+
+   input {
+     float: left;
+     background-color: #ccc;
+   }
+}

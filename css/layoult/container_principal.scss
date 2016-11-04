@@ -1,0 +1,13 @@
+.container {
+  @include tamanhoPadrao(100%, left, #000);
+  @include margem(4%, 0);
+  height: 100%;
+}
+
+// Area dos Pedidos
+@import 'area_pedidos';
+@import 'detalhes_pedido';
+@import 'timeline';
+
+
+//Area das Informações Detalhadas

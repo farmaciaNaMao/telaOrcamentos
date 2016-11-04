@@ -1,0 +1,21 @@
+@media screen and (min-width: 1024px){
+	
+
+	// Menu dos Pedidos
+	.menu {
+  		@include tamanhoPadrao(30%, left);
+  		@include margem(2%);
+	}
+
+	.itens-lista { 
+		ul li span {
+		    @include spacing(2% , 4.5% , 2.2% , 5%); 
+		}
+	}
+
+	.recusados, .concluidos, .cancelados {
+	  @include margem(0, 0 , 2%, 3.5%);
+	}
+
+
+}

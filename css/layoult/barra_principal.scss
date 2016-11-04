@@ -1,0 +1,27 @@
+.barra-principal {
+	@include bgColor($corPadrao);
+	@include tamanhoSimples(100%, left);
+	@include espacamentoSimples(3%);
+	@include color(#fff);
+
+}
+
+.fnm-Hamburguer {
+	@include tamanhoSimples(5%, left);
+	margin-right: 2%;
+}
+
+.fnm-title {
+	@include tamanhoSimples(60%, left);
+	@include alignSimple(left);
+
+	h3 {
+		@include color(#fff);
+	}
+
+	h3 strong {
+		font-family : sfBold;
+
+	}
+
+}	
